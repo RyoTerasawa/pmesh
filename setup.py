@@ -45,7 +45,7 @@ setup(name='pmesh', version=find_version('pmesh/version.py'),
       description='Particle Mesh in Python',
       package_dir={'pmesh': 'pmesh'},
       packages=['pmesh', 'pmesh.tests'],
-      install_requires=['cython', 'numpy', 'mpi4py', 'mpsort @ git+https://github.com/adematti/MP-sort', 'pfft-python @ git+https://github.com/adematti/pfft-python'],
+      install_requires=['cython', 'numpy', 'mpsort @ git+https://github.com/adematti/MP-sort', 'pfft-python @ git+https://github.com/adematti/pfft-python'],
       license='GPL3',
       ext_modules=extensions,
       extras_require={'full': ['abopt'], 'abopt': ['abopt']})
